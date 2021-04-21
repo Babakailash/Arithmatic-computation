@@ -1,5 +1,8 @@
 #!/bin/bash -x
 
-read a b c
 
-echo $a $b $c
+echo "Enter the three input a, b, and c:"
+read a b c
+result=$(($a+$b+$c))
+
+echo  $result
