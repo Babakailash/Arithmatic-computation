@@ -2,7 +2,7 @@
 
 
 echo "Enter the three input a, b, and c:"
-read c a b
-result=$((($c+$a)/$b))
+read a b c
+result=$((($a%$b)+$c))
 
 echo  $result
