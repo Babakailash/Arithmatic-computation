@@ -1,11 +1,15 @@
-#!/bin/bash -x
+#!/bin/bash
 
-read  "Enter the value For Heads & Tail"
-
+for i in {1..15}
+do
+echo
   FLIP=$(($((RANDOM%10))%2))
      if [ $FLIP -eq 1 ]
      then
           echo "Heads"
      else
          echo "Tails"
-    fi
+     fi
+
+done
+
