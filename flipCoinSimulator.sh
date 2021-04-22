@@ -1,15 +1,15 @@
 #!/bin/bash
 
-for i in {1..15}
+Head=0;
+Tail=0;
+i=1
+for  i in {1..21}
 do
-echo
-  FLIP=$(($((RANDOM%10))%2))
-     if [ $FLIP -eq 1 ]
-     then
-          echo "Heads"
-     else
-         echo "Tails"
-     fi
-
+    toss=$((((RANDOM%10))%2))
+     if [[ toss -eq 1 ]]
+       then
+         echo "Head " 
+        else
+         echo  "Tail " 
+      fi
 done
-
