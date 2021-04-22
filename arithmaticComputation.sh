@@ -1,8 +1,7 @@
 #!/bin/bash -x
 
 
-echo "Enter the three input a, b, and c:"
-read a b c
-result=$((($a%$b)+$c))
-
-echo  $result
+for i in $( echo "10 -29 33 67 -6 7 -10" |tr ' ' '\n' | sort -nr )
+do
+     echo $i
+done
